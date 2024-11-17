@@ -41,7 +41,7 @@ static SITES: phf::Map<&'static str, SiteField> = phf::phf_map!{
     "weasyl"         => SiteField {api: "https://www.weasyl.com/api/submissions/{id}/view"},
     "hentai-foundry" => SiteField {api: "https://thumbs.hentai-foundry.com/thumb.php?pid={id}"},
     "e621"           => SiteField {api: "https://e621.net/posts/{id}.json"},
-    "newgrounds"     => SiteField {api: "https://art.ngfiles.com/images/"}                                                     // reverse engineer url to request body
+    "newgrounds"     => SiteField {api: "https://art.ngfiles.com/images/"},                                                    // reverse engineer url to request body
     "bsky"           => SiteField {api: "https://api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=at://{author}/app.bsky.feed.post/{id}&depth=0"} // this is awful. Also best use oauth
 };
 
