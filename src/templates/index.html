@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta property="og:site_name" content="phixiv" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:url" content="{{ url }}" />
+    <meta property="og:image" content="{{ image_proxy_url }}" />
+    <meta property="og:image:alt" content="{{ alt_text }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="alternate" type="application/json+oembed" href="https://{{ host }}/e?i={{ author_id }}&n={{ author_name }}">
+</head>
+<body>
+    <a href="{{ url }}">You should have been redirected, here is a link to the original post.</a>
+    <script type="text/javascript">
+        window.location.replace("{{ url }}")
+    </script>
+</body>
+</html>
